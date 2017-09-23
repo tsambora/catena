@@ -1,4 +1,4 @@
-package com.cekiboy.comet.activities
+package com.cekiboy.catena.activities
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -14,7 +14,7 @@ import android.view.MenuItem
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import com.cekiboy.comet.R
+import com.cekiboy.catena.R
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.MultiFormatWriter
 import org.web3j.crypto.Credentials

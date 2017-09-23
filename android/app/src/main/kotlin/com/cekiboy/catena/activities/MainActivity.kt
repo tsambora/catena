@@ -1,4 +1,4 @@
-package com.cekiboy.comet.activities
+package com.cekiboy.catena.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.widget.Button
 import android.widget.EditText
-import com.cekiboy.comet.R
+import com.cekiboy.catena.R
 
 /**
  * Created by itock on 7/15/2017.

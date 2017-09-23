@@ -1,10 +1,10 @@
-package com.cekiboy.comet.activities
+package com.cekiboy.catena.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
-import com.cekiboy.comet.R
+import com.cekiboy.catena.R
 
 /**
  * Created by itock on 7/15/2017.

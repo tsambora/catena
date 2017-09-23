@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="48dp"
-                android:text="@string/pound"
+                android:text="@string/rupiah"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="48sp"
                 android:textStyle="bold|italic" />
@@ -60,7 +60,7 @@
                 android:text="@string/instruction_token"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20sp"
-                android:textStyle="italic" />
+                android:textStyle="italic"  />
 
             <EditText
                 android:id="@+id/token"
