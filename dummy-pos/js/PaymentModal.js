@@ -13,14 +13,14 @@ export default class PaymentModal extends Component {
                         tag='h3'
                         strong
                         margin='none'>
-                        Select payment method:
+                        Pilih metode pembayaran:
                     </Heading>
                     <Box pad='small'>
                         <Button
-                            label='COMET'
+                            label='CATENA'
                             onClick={() => {
                                 this.props.togglePaymentModal()
-                                this.props.toggleCometInitModal()
+                                this.props.toggleCatenaInitModal()
                             }}
                             primary={true} />
                     </Box>

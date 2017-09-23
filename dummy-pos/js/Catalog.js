@@ -3,6 +3,7 @@ import Box from 'grommet/components/Box'
 import Tiles from 'grommet/components/Tiles'
 import Tile from 'grommet/components/Tile'
 import Card from 'grommet/components/Card'
+import Label from 'grommet/components/Label'
 
 import { catalog } from './merchantData'
 
@@ -15,7 +16,7 @@ export default class Cart extends Component {
                     colorIndex='light-1'
                     thumbnail={item.img}
                     label={item.label}
-                    heading={item.price}
+                    heading={<Label size="small">{item.price}</Label>}
                     headingStrong={false}
                     contentPad='none'
                     size='small' />

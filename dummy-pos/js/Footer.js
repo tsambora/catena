@@ -16,7 +16,7 @@ export default class AppFooter extends Component {
                         tag='h6'
                         strong
                         margin='none'>
-                        © COMET 2017
+                        © SABRINA 2017
                     </Heading>
                 </Box>
             </Footer>

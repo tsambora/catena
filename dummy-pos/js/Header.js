@@ -23,7 +23,7 @@ export default class AppHeader extends Component {
                             tag='h2'
                             strong
                             margin='none'>
-                            <CartIcon size='medium' colorIndex='light-1' />  Sophie's Store <i>admin</i>
+                            <CartIcon size='medium' colorIndex='light-1' />  KASIR TOKO GAUN SABRINA
                         </Heading>
                     </Link>
                 </Box>

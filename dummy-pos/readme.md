@@ -1,5 +1,5 @@
-# Comet Dummy Point of Sale
-This web app illustrates the usage of COMET payment system from the point of view of the merchant.
+# Catena Dummy Point of Sale
+This web app illustrates the usage of CATENA payment system from the point of view of the merchant.
 
 ## How to
 After cloning this project, move to the `dummy-pos` directory.

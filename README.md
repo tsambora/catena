@@ -1,6 +1,6 @@
-# COMET
+# CATENA
 
-### COMET SDK Specification
+### CATENA SDK Specification
 This URL contains a specification and a guide for merchant integration: https://hackmd.io/s/Bk697dO5-
 
 ### How to deploy Ethereum Blockchain private network and dummy Point of Sales App
@@ -19,14 +19,14 @@ docker-compose up -d
 docker exec -it dummy-pos-backend node scripts/init-contract-and-seed-account.js
 ```
 
-### How to deploy COMET Android app
+### How to deploy CATENA Android app
 
 ```
 1. run gradle assemble from source code COMET/android
 2. apk is stored on android/app/build/outputs
 ```
 
-### Steps for Doing Transactions with COMET
+### Steps for Doing Transactions with CATENA
 
 ```
 1. Use web frontend app to generate transaction token

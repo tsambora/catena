@@ -4,6 +4,7 @@ import Button from 'grommet/components/Button'
 import Heading from 'grommet/components/Heading'
 import Table from 'grommet/components/Table'
 import TableRow from 'grommet/components/TableRow'
+import Label from 'grommet/components/Label'
 
 import { cart } from './merchantData'
 
@@ -48,13 +49,13 @@ export default class Cart extends Component {
                             <Box
                                 pad='small'
                                 colorIndex='neutral-3-a'>
-                                + new
+                                + baru
                             </Box>
                         </Box>
                     </Box>
                     <Table>
                         <thead>
-                            <tr><th>item</th><th>amount</th><th>price</th></tr>
+                            <tr><th>nama barang</th><th>jumlah</th><th>harga</th></tr>
                         </thead>
                         <tbody>
                             {cartDisplay}
@@ -62,7 +63,7 @@ export default class Cart extends Component {
                     </Table>
                     <Box pad='small'>
                         <Button
-                            label='CHARGE CUSTOMER $121'
+                            label='CAS PELANGGAN Rp 236.000'
                             onClick={this.props.togglePaymentModal}
                             primary={true} />
                     </Box>

@@ -4,11 +4,11 @@ import Heading from 'grommet/components/Heading'
 import Layer from 'grommet/components/Layer'
 import CloseIcon from 'grommet/components/icons/base/Close'
 
-export default class CometFailedModal extends Component {
+export default class CatenaFailedModal extends Component {
     render() {
         return (
             <Layer onClose={() => {
-                this.props.toggleCometFailedModal()
+                this.props.toggleCatenaFailedModal()
             }}>
                 <Box
                     align='center'
@@ -20,7 +20,7 @@ export default class CometFailedModal extends Component {
                             tag='h3'
                             align='center'
                             margin='none'>
-                            Payment Unsuccessful
+                            Pembayaran Gagal
                         </Heading>
                     </Box>
                     <Box
@@ -35,7 +35,7 @@ export default class CometFailedModal extends Component {
                             tag='h4'
                             align='center'
                             margin='none'>
-                            error: Authentication Failed
+                            error: Autentikasi Gagal
                         </Heading>
                     </Box>
                 </Box>

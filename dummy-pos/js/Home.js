@@ -5,9 +5,9 @@ import Section from 'grommet/components/Section'
 import Catalog from './Catalog'
 import Cart from './Cart'
 import PaymentModal from './PaymentModal'
-import CometInitModal from './CometInitModal'
-import CometSuccessModal from './CometSuccessModal'
-import CometFailedModal from './CometFailedModal'
+import CatenaInitModal from './CatenaInitModal'
+import CatenaSuccessModal from './CatenaSuccessModal'
+import CatenaFailedModal from './CatenaFailedModal'
 
 import { catalog } from './merchantData'
 
@@ -17,37 +17,37 @@ export default class Home extends Component {
 
         this.state = {
             showPaymentModal: false,
-            showCometInitModal: false,
-            showCometSuccessModal: false,
-            showCometFailedModal: false,
+            showCatenaInitModal: false,
+            showCatenaSuccessModal: false,
+            showCatenaFailedModal: false,
             balance_before: null,
             balance_after: null,
         }
 
         this.togglePaymentModal = this.togglePaymentModal.bind(this)
-        this.toggleCometInitModal = this.toggleCometInitModal.bind(this)
-        this.toggleCometSuccessModal = this.toggleCometSuccessModal.bind(this)
-        this.toggleCometFailedModal = this.toggleCometFailedModal.bind(this)
+        this.toggleCatenaInitModal = this.toggleCatenaInitModal.bind(this)
+        this.toggleCatenaSuccessModal = this.toggleCatenaSuccessModal.bind(this)
+        this.toggleCatenaFailedModal = this.toggleCatenaFailedModal.bind(this)
     }
 
     togglePaymentModal() {
         this.setState({ showPaymentModal: !this.state.showPaymentModal })
     }
 
-    toggleCometInitModal() {
-        this.setState({ showCometInitModal: !this.state.showCometInitModal })
+    toggleCatenaInitModal() {
+        this.setState({ showCatenaInitModal: !this.state.showCatenaInitModal })
     }
 
-    toggleCometSuccessModal() {
-        this.setState({ showCometSuccessModal: !this.state.showCometSuccessModal })
+    toggleCatenaSuccessModal() {
+        this.setState({ showCatenaSuccessModal: !this.state.showCatenaSuccessModal })
     }
 
     setBalance(balance_before, balance_after) {
         this.setState({ balance_before, balance_after })
     }
 
-    toggleCometFailedModal() {
-        this.setState({ showCometFailedModal: !this.state.showCometFailedModal })
+    toggleCatenaFailedModal() {
+        this.setState({ showCatenaFailedModal: !this.state.showCatenaFailedModal })
     }
 
     render() {
@@ -62,30 +62,30 @@ export default class Home extends Component {
                     this.state.showPaymentModal ?
                         <PaymentModal
                             togglePaymentModal={this.togglePaymentModal}
-                            toggleCometInitModal={this.toggleCometInitModal} />
+                            toggleCatenaInitModal={this.toggleCatenaInitModal} />
                         : null
                 }
                 {
-                    this.state.showCometInitModal ?
-                        <CometInitModal
-                            toggleCometInitModal={this.toggleCometInitModal}
-                            toggleCometSuccessModal={this.toggleCometSuccessModal}
+                    this.state.showCatenaInitModal ?
+                        <CatenaInitModal
+                            toggleCatenaInitModal={this.toggleCatenaInitModal}
+                            toggleCatenaSuccessModal={this.toggleCatenaSuccessModal}
                             setBalance={(balance_before, balance_after) => { this.setBalance(balance_before, balance_after) }}
-                            toggleCometFailedModal={this.toggleCometFailedModal} />                            
+                            toggleCatenaFailedModal={this.toggleCatenaFailedModal} />                            
                         : null
                 }
                 {
-                    this.state.showCometSuccessModal ?
-                        <CometSuccessModal
+                    this.state.showCatenaSuccessModal ?
+                        <CatenaSuccessModal
                             balance_before={this.state.balance_before}
                             balance_after={this.state.balance_after}
-                            toggleCometSuccessModal={this.toggleCometSuccessModal} />
+                            toggleCatenaSuccessModal={this.toggleCatenaSuccessModal} />
                         : null
                 }
                 {
-                    this.state.showCometFailedModal ?
-                        <CometFailedModal
-                            toggleCometFailedModal={this.toggleCometFailedModal} />
+                    this.state.showCatenaFailedModal ?
+                        <CatenaFailedModal
+                            toggleCatenaFailedModal={this.toggleCatenaFailedModal} />
                         : null
                 }
             </Section>
