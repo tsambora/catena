@@ -13,6 +13,19 @@ services:
       - BASE_API_URL=http://dummy-pos-backend:3000
     ports:
       - "8080:8080"
+  dummy-pos-rural:
+    build: dummy-pos-rural
+    restart: on-failure
+    container_name: dummy-pos-rural
+    hostname: dummy-pos-rural
+    links:
+      - dummy-pos-backend
+    depends_on:
+      - dummy-pos-backend
+    environment:
+      - BASE_API_URL=http://dummy-pos-backend:3000
+    ports:
+      - "7070:7070"
   dummy-pos-backend:
     build: dummy-pos-backend
     restart: on-failure
