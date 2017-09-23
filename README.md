@@ -7,14 +7,14 @@ This URL contains a specification and a guide for merchant integration: https://
 
 ```
 sh
-git clone https://github.com/tsambora/comet
-cd comet
+git clone https://github.com/tsambora/catena
+cd catena
 ./deploy.sh
 ```
 or 
 ```sh
-git clone https://github.com/tsambora/comet
-cd comet
+git clone https://github.com/tsambora/catena
+cd catena
 docker-compose up -d
 docker exec -it dummy-pos-backend node scripts/init-contract-and-seed-account.js
 ```
@@ -22,7 +22,7 @@ docker exec -it dummy-pos-backend node scripts/init-contract-and-seed-account.js
 ### How to deploy CATENA Android app
 
 ```
-1. run gradle assemble from source code COMET/android
+1. run gradle assemble from source code CATENA/android
 2. apk is stored on android/app/build/outputs
 ```
 

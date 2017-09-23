@@ -1,5 +1,5 @@
 # DUMMY-POS-BACKEND
-A dummy for COMET Point of Sales app. Real merchant can use their own implementation to write to the blockchain.
+A dummy for CATENA Point of Sales app. Real merchant can use their own implementation to write to the blockchain.
 
 ## API List
 
@@ -34,7 +34,7 @@ Output:
 
 Get balance of certain account.
 
-Input: 
+Input:
 ```
 // Params:
 // hash address of an account
@@ -51,7 +51,7 @@ Output:
 ### [POST] /transactions
 Send ether between two accounts.
 
-Input: 
+Input:
 ```
 // URL:
 http://baseurl:port/transactions
@@ -78,7 +78,7 @@ Output:
 ### [POST] /transactions/topup
 Topup account.
 
-Input: 
+Input:
 ```
 // URL:
 http://baseurl:port/transactions/topup

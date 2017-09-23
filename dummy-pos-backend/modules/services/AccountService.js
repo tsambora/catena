@@ -4,8 +4,8 @@ const EthUtils = require("../utils/EthUtils.js")
 const Web3Singleton = require("../repositories/Web3Singleton.js")
 const ContractObject = require("../utils/ContractObject")
 
-const SOL = './contracts/CometContract.sol'
-const CONTRACT_NAME = 'CometContract'
+const SOL = './contracts/CatenaContract.sol'
+const CONTRACT_NAME = 'CatenaContract'
 const CONTRACT_ADDRESS = '0xdd6ab28f8622f5ac3a680a944b9cde92e131ed45'
 
 const AccountService = function () {
@@ -15,7 +15,7 @@ const AccountService = function () {
   this.getAll = () => this.web3Instance.getAllAccounts()
 
   this.getBalance = (address) => {
-    
+
     const contractObject = new ContractObject(this.web3Instance.web3, CONTRACT_NAME, SOL)
     return contractObject
       .getContractInstanceFromAddress(CONTRACT_ADDRESS)
