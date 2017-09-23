@@ -1,4 +1,4 @@
-package com.cekiboy.comet.activities
+package com.cekiboy.catena.activities
 
 import android.content.Intent
 import android.os.Build
@@ -13,7 +13,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
-import com.cekiboy.comet.R
+import com.cekiboy.catena.R
 import java.security.KeyStore
 import javax.crypto.Cipher
 import javax.crypto.KeyGenerator
@@ -24,7 +24,7 @@ import javax.crypto.KeyGenerator
 class LoginActivity : AppCompatActivity() {
 
     private val ANDROID_KEY_STORE = "AndroidKeyStore"
-    private val CIPHER_KEY_NAME = "COMET"
+    private val CIPHER_KEY_NAME = "CATENA"
 
     private var textViewPin: TextView? = null
     private var buttonKeypad1: Button? = null

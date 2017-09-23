@@ -56,5 +56,5 @@ signedToken = 0x84d0375945941ba6863acd8c0202bfe0701bbda5d41c68c8594463492692d31f
 ```
 Backend : http://139.59.120.226:3000, 
 Merchant frontend : http://139.59.120.226:8080, 
-Android apk : https://drive.google.com/open?id=0B4pr8rhBwPkSQ3hmZUlYM2xCSHc
+Android apk : https://drive.google.com/file/d/0B5fTrQyaSuyEZURwMC1Ea0FDMkU
 ```
