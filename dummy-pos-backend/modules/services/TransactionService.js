@@ -4,10 +4,10 @@ const EthUtils = require("../utils/EthUtils.js")
 const Web3Singleton = require("../repositories/Web3Singleton.js")
 const ContractObject = require("../utils/ContractObject")
 
-const SOL = './contracts/CometContract.sol'
-const CONTRACT_NAME = 'CometContract'
+const SOL = './contracts/CatenaContract.sol'
+const CONTRACT_NAME = 'CatenaContract'
 const CONTRACT_ADDRESS = '0xdd6ab28f8622f5ac3a680a944b9cde92e131ed45'
-const COMMONWEALTH_ADDRESS = '0xff06ad5d076fa274b49c297f3fe9e29b5ba9aadc'
+const BNI_ADDRESS = '0xff06ad5d076fa274b49c297f3fe9e29b5ba9aadc'
 
 const TransactionService = function () {
 
@@ -39,10 +39,10 @@ const TransactionService = function () {
     return contractObject
       .getContractInstanceFromAddress(CONTRACT_ADDRESS)
       .then((contractInstance) => {
-        const commonwealthToken = Math.random().toString(36).substring(2,8)
-        const commonwealthSign = EthUtils.sign(this.web3Instance.web3, COMMONWEALTH_ADDRESS, commonwealthToken)
-        const rsv = EthUtils.getRSVFromSignedToken(this.web3Instance.web3, commonwealthSign.substr(2))
-        contractInstance.transfer(COMMONWEALTH_ADDRESS, address, value, commonwealthToken, rsv.v, rsv.r, rsv.s)
+        const bniToken = Math.random().toString(36).substring(2,8)
+        const bniSign = EthUtils.sign(this.web3Instance.web3, BNI_ADDRESS, bniToken)
+        const rsv = EthUtils.getRSVFromSignedToken(this.web3Instance.web3, bniSign.substr(2))
+        contractInstance.transfer(BNI_ADDRESS, address, value, bniToken, rsv.v, rsv.r, rsv.s)
         const balance = contractInstance.getBalance(address)
         const payload = {
           'address': address,

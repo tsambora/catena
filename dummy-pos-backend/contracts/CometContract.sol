@@ -1,7 +1,7 @@
 pragma solidity ^0.4.8;
 
-contract CometContract {
-    string public standard = 'CometContract 0.1';
+contract CatenaContract {
+    string public standard = 'CatenaContract 0.1';
     uint256 public totalBalance;
 
     mapping (address => uint256) public balance;
@@ -9,7 +9,7 @@ contract CometContract {
 
     event Transfer(address indexed sender, address indexed recipient, uint256 value);
 
-    function CometContract(uint256 initialBalance) {
+    function CatenaContract(uint256 initialBalance) {
         balance[msg.sender] = initialBalance;
         totalBalance = initialBalance;
     }
