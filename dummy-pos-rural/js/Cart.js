@@ -25,9 +25,7 @@ export default class Cart extends Component {
         ));
 
         return (
-            <Box
-                pad={{vertical: 'medium', horizontal: 'none'}}
-                basis='1/3'>
+            <Box pad={{vertical: 'medium', horizontal: 'none'}}>
                 <Box colorIndex='light-1'>
                     <Box
                         direction='row'

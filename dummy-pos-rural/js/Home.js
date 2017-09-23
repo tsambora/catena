@@ -56,7 +56,6 @@ export default class Home extends Component {
                 direction='row'
                 pad='small'
                 colorIndex='light-2'>
-                <Catalog />
                 <Cart togglePaymentModal={this.togglePaymentModal} />
                 {
                     this.state.showPaymentModal ?
